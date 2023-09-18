@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Routing Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <ng-include src="'shared/header/header.html'"></ng-include>
+
+    <ng-view></ng-view> <!-- This is where the component templates will be loaded -->
+
+    <ng-include src="'shared/footer/footer.html'"></ng-include>
+
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="services/data.service.js"></script>
+    <script src="components/home/home.controller.js"></script>
+    <script src="components/about/about.controller.js"></script>
+</body>
+
+</html>
