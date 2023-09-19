@@ -1,4 +1,13 @@
 <div ng-controller="AboutController">
-    <h1>About Us</h1>
+    <h1>About Us Main</h1>
     <p>{{ aboutInfo }}</p>
+
+    <ul>
+        <li><a href="#/about/subroute1">Subroute 1</a></li>
+        <li><a href="#/about/subroute2">Subroute 2</a></li>
+    </ul>
+
+    <div ng-view></div> This is where the subroute content will be loaded
+
+
 </div>
